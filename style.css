@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #EEE4D9;
+}
+
+.whole-body{
+    display:flex;
+    flex-direction: column;
+    padding-top:50px;
+    padding-bottom: 50px;
+    margin: 0 auto; /* Horizontally center the whole-body container */
+    max-width: 800px; /* Adjust as needed */
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%; /* Adjust width as needed */
+    height: 50%;
+    margin: 0 auto; /* Horizontally center the card-container */
+    
+}
+
+
+.header-image-container{
+    display: flex;
+    justify-content: center;
+}
+
+.header-image-container img{
+    width: 100%;
+    padding: 0;
+} 
+
+.title-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.title-container h1{
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #6A4B35;
+    margin-bottom: 25px;;
+}
+
+.caption-container{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.caption-container h6{
+    font-family: "Josefin Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #6A4B35;
+    padding-left: 40px;
+    padding-right: 50px;
+    margin: 0px;
+}
+
+
+.links-container{
+    display: flex;
+    justify-content: center;
+   margin: none;
+   padding:none;
+}
+
+.links-container ul{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+}
+
+.links-container li{
+    list-style: none;
+    text-decoration: none;
+    padding-top: 24px;
+}
+
+.links-container button{
+    width: 250px;
+    height: 55px;
+    border-radius: 20px;
+    border-style: none;
+    background-color: #CC876D;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 22px;
+    font-family: "Josefin Sans";
+    
+}
+
+.links-container button:hover{
+    background-color: #A3C3BD;
+    transition: 0.5s;
+}
+
+a{
+    text-decoration: none;
+    color: #6A4B35;
+   display: block;
+   padding-top: 20px;
+    width: 250px;
+    height: 55px;
+}
+
+a:visited{
+    text-decoration: none;
+    color: #3f2c1f;
+   display: block;
+    width: 250px;
+    height: 55px;
+    padding-top: 20px;
+    
+}
+
+.footer img{
+    display: none;
+}
+
+@media screen and (max-width: 393px) {
+    .whole-body {
+        width: 393px;
+        margin: 0;
+        padding: 0;
+    
+    }
+    .footer img{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 120px;
+        padding-top: 50px;
+    }
+    .card-container{
+    width: 393px; /* Adjust width as needed */
+    margin: 0 ;
+    }
+}
